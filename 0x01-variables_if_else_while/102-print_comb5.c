@@ -15,24 +15,24 @@ int main(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		for(j = i; j <= 9; j++)
+		for (j = i; j <= 9; j++) 
 		{
 			if (i != 9 && j != 9)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
-				putchar(' ');
-			}
-			for (k = 0; k <= 9; k++)
-			{
-				for(l = k + 1; l <= 9; l++)
+				for (k = 0; k <= 9; k++)
 				{
-					putchar(k + '0');
-					putchar(l + '0');
-					if ( i != 9 && j != 8)
+					for (l = k + 1; l <= 9; l++)
 					{
-						putchar(',');
+						putchar(i + '0');
+						putchar(j + '0');
 						putchar(' ');
+						putchar(k + '0');
+						putchar(l + '0');
+						if (i != 9 && j != 8)
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 				}
 			}
