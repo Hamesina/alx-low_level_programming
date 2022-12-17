@@ -2,10 +2,10 @@
 /**
  * _abs - absolute value
  *
- * @n: integer
+ * @int: integer
  * Return: number
  */
-int _abs(int n)
+int _abs(int)
 {
 	int n;
 
