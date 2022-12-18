@@ -10,9 +10,12 @@ int main(void)
 
 	int i;
 
-	for (i = 0; i < 50; i++)
+	int sum = 0;
+
+	for (i = 0; i <= 50; i++)
 	{
-		f = f + i;
+		sum = sum + f;
+		f = sum;
 		if (i < 50)
 			printf("%d, ", f);
 		else
