@@ -17,12 +17,10 @@ void print_times_table(int n)
 		{
 			k = i * j;
 			if (j < n)
-				printf("%d, ", k);
+				printf("%d,  ", k);
 			else
-				printf("%d", k);
+				printf("%d\n", k);
 		}
-		if (i < n)
-			printf("\n");
 	}
 }
 
