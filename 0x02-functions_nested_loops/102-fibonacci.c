@@ -6,20 +6,23 @@
  */
 int main(void)
 {
-	int f = 1;
-
 	int i;
 
-	int sum = 0;
+	int a = 0;
 
-	for (i = 0; i <= 50; i++)
+	int b = 1;
+
+	int sum;
+
+	for (i = 0; i < 50; i++)
 	{
-		sum = sum + f;
-		f = sum;
-		if (i < 50)
-			printf("%d, ", f);
+		sum = a + b;
+		a = b;
+		b = sum;
+		if (i < 49)
+			printf("%d, ", sum);
 		else
-			printf("%d\n", f);
+			printf("%d\n", sum);
 	}
 	return (0);
 }
